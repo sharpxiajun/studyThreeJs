@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loader obj demo</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <script type="text/javascript" src="./js/libs/three.js"></script>
+    <script type="text/javascript" src="./js/libs/stats.js"></script>
+    <script type="text/javascript" src="./js/libs/dat.gui.js"></script>
+    <script type="text/javascript" src="./js/libs/OBJLoader.js"></script>
+    <script type="text/javascript" src="./js/libs/MTLLoader.js"></script>
+    <script type="text/javascript" src="./js/libs/OBJMTLLoader.js"></script>
+    <script type="text/javascript" src="./js/initStats.js"></script>
+    <script type="text/javascript" src="./js/reload.js"></script>
+</head>
+<body onload="init()">
+<div id="Stats-output"></div>
+<div id="WebGL-output"></div>
+</body>
+</html>
+<script>
+    function init() {
+        var stats = initStats();
+
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth/ window.innerHeight, 0.1, 1000);
+        var webGLRenderer = new THREE.WebGLRenderer();
+        webGLRenderer.setClearColor(new THREE.Color(0xffffff, 0.4));
+        webGLRenderer.setSize(window.innerWidth, window.innerHeight);
+        webGLRenderer.shadowMapEnabled = true;
+
+        camera.position.x = -30;
+        camera.position.y = 30;
+        camera.position.z = 400;
+        camera.lookAt(new THREE.Vector3(5, 34, 10));
+        scene.add(camera);
+
+        var spotLight = new THREE.DirectionalLight(0xffffff);
+        spotLight.position.set(30, 40, 50);
+        spotLight.intensity = 0.3;
+        scene.add(spotLight);
+
+        document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
+
+        var step = 0;
+        var controls = new function () {};
+
+        var gui = new dat.GUI();
+        var mesh;
+
+        var loader = new THREE.OBJLoader();
+        loader.load('./assets/models/mydemo.obj', function (loadedMesh) {
+            var material = new THREE.MeshLambertMaterial({color: 0x5C3A21});
+            var material1 = new THREE.MeshLambertMaterial({color: 0x00361f});
+            var material2 = new THREE.MeshLambertMaterial({color: 0x23005e});
+
+            // loadedMesh is a group of meshes. For
+            // each mesh set the material, and compute the information
+            // three.js needs for rendering.
+            console.log(loadedMesh)
+            let flag = 0
+            loadedMesh.children.forEach(function (child) {
+                if (flag == 0) {
+                    child.material = material;
+                    flag = 1
+                } else if (flag == 1) {
+                    child.material = material1;
+                    flag = 2
+                } else {
+                    child.material = material2;
+                    flag = 0
+                }
+                child.geometry.computeFaceNormals();
+                child.geometry.computeVertexNormals();
+            });
+
+            mesh = loadedMesh;
+            // loadedMesh.scale.set(100, 100, 100);
+            // loadedMesh.scale.set(2, 2, 2);
+            // loadedMesh.rotation.x = 2;
+            // loadedMesh.rotation.y = 2;
+            // loadedMesh.rotation.z = 2;
+            loadedMesh.position.y = -90
+            loadedMesh.position.z = -40
+            loadedMesh.position.x = -20
+            scene.add(loadedMesh);
+        });
+
+        render();
+
+        function render() {
+            stats.update();
+            // if (mesh) {
+            //     mesh.rotation.y += 0.006;
+            // }
+            requestAnimationFrame(render);
+            webGLRenderer.render(scene, camera);
+        }
+    }
+</script>
