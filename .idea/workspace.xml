@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf86dfeb-d812-48a1-b46a-8fb14ab92672" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css3d_nav1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css3d_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/css3d_nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample-loader-obj-n01.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample-loader-obj-n01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample-loader-obj-n02.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample-loader-obj-n02.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,30 +18,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css3d_nav.html">
+        <entry file="file://$PROJECT_DIR$/sample-loader-obj-n01.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="277" column="35" selection-start-line="277" selection-start-column="35" selection-end-line="277" selection-end-column="35" />
+            <state relative-caret-position="501">
+              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css3d_nav1.html">
+        <entry file="file://$PROJECT_DIR$/sample-loader-obj-n02.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="261" column="67" selection-start-line="261" selection-start-column="67" selection-end-line="261" selection-end-column="67" />
+            <state relative-caret-position="341">
+              <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css3d_periodictable.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="138" column="52" selection-end-line="461" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/assets/textures/planets/mars_1k_color.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/textures/planets/Mars-normalmap_2k.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/textures/planets/EarthSpec.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/textures/planets/EarthNormal.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/textures/planets/earth-specular.gif">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/textures/planets/Earth.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -83,10 +104,11 @@
         <option value="$PROJECT_DIR$/sample-loader-obj-mtl.html" />
         <option value="$PROJECT_DIR$/sample-loader-collada.html" />
         <option value="$PROJECT_DIR$/sample-loader-obj.html" />
-        <option value="$PROJECT_DIR$/sample-loader-obj-n01.html" />
         <option value="$PROJECT_DIR$/css3d_periodictable.html" />
         <option value="$PROJECT_DIR$/css3d_nav.html" />
         <option value="$PROJECT_DIR$/css3d_nav1.html" />
+        <option value="$PROJECT_DIR$/sample-loader-obj-n01.html" />
+        <option value="$PROJECT_DIR$/sample-loader-obj-n02.html" />
       </list>
     </option>
   </component>
@@ -101,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,11 +136,28 @@
               <item name="studyThreeJs" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="studyThreeJs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studyThreeJs" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studyThreeJs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studyThreeJs" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+              <item name="planets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studyThreeJs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studyThreeJs" type="462c0819:PsiDirectoryNode" />
+              <item name="njs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,18 +203,20 @@
       <option name="presentableId" value="Default" />
       <updated>1553148952548</updated>
       <workItem from="1553148954091" duration="11307000" />
-      <workItem from="1553216664421" duration="20971000" />
+      <workItem from="1553216664421" duration="22241000" />
+      <workItem from="1553335546338" duration="653000" />
+      <workItem from="1553478340951" duration="3332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32278000" />
+    <option name="totallyTimeSpent" value="37533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20805812" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20805812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -193,7 +235,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3051519" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20805812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,22 +258,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/libs/ctm.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="38">
-            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/04-materials-light-animation.html" />
-    <entry file="file://$PROJECT_DIR$/reference/09-line-material.html" />
-    <entry file="file://$PROJECT_DIR$/reference/05-custom-geometry.html" />
     <entry file="file://$PROJECT_DIR$/custom-geometry-demo.html" />
     <entry file="file://$PROJECT_DIR$/reference/06-load-obj-mydemo.html" />
     <entry file="file://$PROJECT_DIR$/reference/07-load-obj-mtl.html" />
@@ -283,13 +309,6 @@
     <entry file="file://$PROJECT_DIR$/assets/models/mydemo01.mtl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample-loader-obj-mtl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="61" selection-start-line="61" selection-end-line="67" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loader-obj-demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -330,9 +349,7 @@
     <entry file="file://$PROJECT_DIR$/assets/models/aliyun1.dae">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/njs/js/vr/WebVR.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/njs/js/vr/WebVR.js" />
     <entry file="file://$PROJECT_DIR$/js/libs/OBJLoader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -382,13 +399,17 @@
     <entry file="file://$PROJECT_DIR$/assets/textures/general/wood-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample-loader-obj-n02.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample-loader-obj-n01.html">
+    <entry file="file://$PROJECT_DIR$/css3d_nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1634">
-          <caret line="86" selection-start-line="86" selection-end-line="89" selection-end-column="29" />
+        <state relative-caret-position="5263">
+          <caret line="277" column="35" selection-start-line="277" selection-start-column="35" selection-end-line="277" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css3d_nav1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4959">
+          <caret line="261" column="67" selection-start-line="261" selection-start-column="67" selection-end-line="261" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -399,24 +420,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sample-loader-obj-mtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" selection-start-line="61" selection-end-line="67" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css3d_periodictable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="2622">
           <caret line="138" column="52" selection-end-line="461" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css3d_nav.html">
+    <entry file="file://$PROJECT_DIR$/sample-loader-obj-n01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="277" column="35" selection-start-line="277" selection-start-column="35" selection-end-line="277" selection-end-column="35" />
+        <state relative-caret-position="501">
+          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css3d_nav1.html">
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/earth.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/EarthSpec.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/EarthNormal.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/earth-specular.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/Earth.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/mars_1k_color.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/Mars_2k-050104.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/mars_1k_normal.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/textures/planets/Mars-normalmap_2k.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample-loader-obj-n02.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="261" column="67" selection-start-line="261" selection-start-column="67" selection-end-line="261" selection-end-column="67" />
+        <state relative-caret-position="341">
+          <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
         </state>
       </provider>
     </entry>

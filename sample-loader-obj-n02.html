@@ -8,6 +8,7 @@
     <script type="text/javascript" src="./js/libs/stats.js"></script>
     <script type="text/javascript" src="./js/libs/dat.gui.js"></script>
     <script type="text/javascript" src="./njs/loaders/OBJLoader.js"></script>
+    <script type="text/javascript" src="./njs/controls/OrbitControls.js"></script>
     <script type="text/javascript" src="./js/initStats.js"></script>
     <script type="text/javascript" src="./js/reload.js"></script>
 </head>
@@ -20,19 +21,29 @@
     function init() {
         var renderScene = function() {
             stats.update();
+            var elapsed = clock.getElapsedTime();
+            ballArr.forEach(function(ball, ind){
+                var index = ind + 1
+                ball.position.set( Math.sin( elapsed ) * 100 * index, 0, Math.cos( elapsed ) * 100 * index);
+            })
 
             requestAnimationFrame(renderScene);
             renderer.render(scene, camera);
         }
 
         var stats = initStats();
+        var  ballArr = []
+
 
         var scene = new THREE.Scene();
         var step = 0;
         var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
         var renderer = new THREE.WebGLRenderer();
 
-        renderer.setClearColor(new THREE.Color(0x000000, 1));
+        var clock = new THREE.Clock();
+        var controls = new THREE.OrbitControls( camera );
+
+        renderer.setClearColor(0xeeeeee);
         renderer.setSize(window.innerWidth, window.innerHeight);
         // renderer.shadowMapEnabled = true;
 
@@ -44,24 +55,42 @@
             // loadedMesh.scale.set(0.7, 0.7, 0.7)
 
             var material = new THREE.MeshNormalMaterial({color: 0x7777ff});
-            var texture = THREE.ImageUtils.loadTexture("./assets/textures/general/metal-rust.jpg");
-            var texture1 = THREE.ImageUtils.loadTexture("./assets/textures/general/wood-2.jpg");
+            var earth = THREE.ImageUtils.loadTexture("./assets/textures/planets/earth.jpg");
+            var mars1 = THREE.ImageUtils.loadTexture("./assets/textures/planets/Mars-normalmap_2k.png");
+            var mars2 = THREE.ImageUtils.loadTexture("./assets/textures/planets/mars_1k_color.jpg");
+            var texture = THREE.ImageUtils.loadTexture("./assets/textures/general/wood-2.jpg");
             var mat = new THREE.MeshPhongMaterial();
-            var mat1 = new THREE.MeshPhongMaterial();
+            var matEarth = new THREE.MeshPhongMaterial();
+            var matMars1 = new THREE.MeshPhongMaterial();
+            var matMars2 = new THREE.MeshPhongMaterial();
             mat.map = texture;
-            mat1.map = texture1;
+            mat.side = THREE.DoubleSide;
+            matEarth.map = earth;
+            matEarth.side = THREE.DoubleSide;
+            matMars1.map = mars1;
+            matMars1.side = THREE.DoubleSide;
+            matMars2.map = mars2;
+            matMars2.side = THREE.DoubleSide;
 
+            var plantsFlag = 0
             loadedMesh.children.forEach(function (child) {
                 if (child.name.indexOf('挤压') >= 0) {
-                    console.log('child name', child.name)
-                    console.log(child)
-                    child.material = mat1;
-                } else {
-                    if (child.name.indexOf('立方体') >= 0) {
-                        console.log('立方体', child)
-                    }
                     child.material = mat;
-                    // child.material = material;
+                } else if (child.name.indexOf('球体') >= 0) {
+                    console.log('球体', child)
+                    if (plantsFlag === 0) {
+                        child.material = matEarth
+                    } else if (plantsFlag === 1){
+                        child.material = matMars1
+                    } else if (plantsFlag === 2){
+                        child.material = matMars2
+                    } else {
+                        child.material = matEarth
+                    }
+                    ballArr.push(child)
+                    plantsFlag++
+                } else {
+                    child.material = mat;
                 }
                 // child.material = mat;
             })
